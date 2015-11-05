@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LiVoxGen
 A C++ Program to Voxelize LiDAR Data
 
@@ -15,3 +16,6 @@ The following libraries must be installed in order to run LiVoxGen. All but kdtr
 
 ## Website
 More information can be found at http://bitly.com/livoxgen.
+=======
+# LiVoxGen_2.0
+>>>>>>> 4b47af9bcc34a5bbc36aae3e493118fa711da820
