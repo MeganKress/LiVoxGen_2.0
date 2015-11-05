@@ -1,0 +1,87 @@
+###################################################################
+##A parameter file of relevant information for the VoxGen Program
+###################################################################
+
+
+# Note: the following three parameters may be skipped if one decides 
+# to pass arguments to VoxGen.
+
+fileORdir file
+inFile /home/megan/Downloads/LiVoxGen-master/l0s547.las
+inDir /home/megan/Data/Alaska/Split/R15
+
+###################################################################
+
+# Filtering y or n?
+
+filter n
+
+# If filtering 'y,' select parameters
+
+## Classifications ##
+# A: All
+# U: Unclassified
+# G: Ground
+# L: Low Vegetation
+# M: Medium Vegetation
+# H: High Vegetation
+# B: Building
+# W: Water
+
+classes A
+returns A
+angle 15
+
+
+###################################################################
+
+# Voxel Dimensions
+
+base 13
+height 0.3
+
+# Initial Coordinates(all 0s for min/max from .las file)
+# z1 will usually be 0
+# z2 will usually be 0
+
+z1 0
+z2 0
+
+x1 0
+x2 0
+
+y1 0
+y2 0
+
+
+# Get zmin and zmax from MinMaxZ program's range.txt output if
+# uniform voxels are desired for multiple .las files in the 
+# same acquisition.
+# If '0' zmin = z1 and zmax = z2, respectively.
+
+zmin 0
+zmax 0
+
+###################################################################
+
+
+#Are the files split y or n? For example, in the form ac_id_segId_splitNum.las.
+split n
+
+#Acquisition id if lidar files do NOT contain it in their names (0 otherwise)
+acquisition 20140725_tiu_7
+
+
+###################################################################
+## OUTPUT FILE
+###################################################################
+
+# Histogram Flat File y or n?
+
+hff y
+hffTitle histff
+hffDir /home/megan/Downloads/
+
+
+###################################################################
+
